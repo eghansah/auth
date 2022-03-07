@@ -1,0 +1,7 @@
+<html>
+    <body>
+        First Name: {{.user.Firstname}}<br>
+        Last Name: {{.user.Lastname}}<br />
+        MFA Enabled: {{.user.EnableTOTP}} {{if not .user.EnableTOTP}}Enable MFA{{end}}
+    </body>
+</html>

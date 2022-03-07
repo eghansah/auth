@@ -1,0 +1,31 @@
+<html>
+    <body>
+        <form method="post">
+            <table>
+                <tr>
+                    <td colspan="2"><center>{{.msg}}</center></td>
+                </tr>
+                <tr>
+                    <td>First Name</td>
+                    <td><input name=firstname></td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td><input name=lastname></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input name=email></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name=password></td>
+                </tr>
+                <tr>
+                    <td>{{ .csrfField }}</td>
+                    <td><input type=submit></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
